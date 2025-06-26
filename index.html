@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | Maria Florencia Juárez</title>
+  <style>
+    /* =================== VARIABLES DE COLOR Y FUENTE =================== */
+    :root {
+      --color-principal: #ff99aa;
+      --color-acento: #ffe6ec;
+      --color-fondo: #fdf6f8;
+      --color-texto: #2a2a2a;
+      --color-tarjeta: #fff0f5;
+      --fuente: 'Segoe UI', sans-serif;
+    }/* =================== REGLAS GENERALES =================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: var(--color-acento);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+header h1 {
+  color: var(--color-principal);
+  font-size: 1.8em;
+}
+
+nav a {
+  color: var(--color-texto);
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--color-principal);
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--color-principal);
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #444;
+}
+
+.button {
+  background: var(--color-principal);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #ff7799;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background: var(--color-tarjeta);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+a {
+  color: var(--color-principal);
+}
+
+footer {
+  background: var(--color-acento);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+  </style>
+</head>
+<body>  <!-- ENCABEZADO CON MENÚ -->  <header>
+    <h1>Maria Florencia Juárez</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobremi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>  <!-- SECCIÓN PRINCIPAL (HERO) -->  <section class="hero" id="inicio">
+    <h1>Hola, soy Florencia</h1>
+    <p>Estudiante de Producción y Desarrollo de Videojuegos</p>
+    <button class="button" onclick="document.getElementById('contacto').scrollIntoView()">Contactame</button>
+  </section>  <!-- SOBRE MÍ -->  <section id="sobremi">
+    <h2>Sobre mí</h2>
+    <p>Nací el 13 de agosto de 2004 y vivo en Open Door, partido de Luján. Actualmente estudio Producción y Desarrollo de Videojuegos en la Universidad Nacional de José C. Paz, carrera que elegí gracias a mi amor por los videojuegos, inspirado desde chica por mi papá y Sonic.</p>
+    <p>Me gusta dibujar y aportar ideas creativas. Estoy mejorando día a día en programación, aunque todavía me cuesta un poco.</p>
+  </section>  <!-- PROYECTOS -->  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="grid">
+      <div class="card">
+        <h3><a href="https://matumatute.github.io/jamon.html" target="_blank">Juego del Jamón</a></h3>
+        <p>Un proyecto realizado en Fundamentos de la Programación I.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://matumatute.github.io/JdM.html" target="_blank">Juego de Memoria</a></h3>
+        <p>Otra práctica del curso, enfocada en lógica y memoria.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://matumatute.github.io/Grajna.html" target="_blank">Juego de Grajna</a></h3>
+        <p>Proyecto jugable con estilo retro y temática simpática.</p>
+      </div>
+    </div>
+  </section>  <!-- CONTACTO -->  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Podés escribirme o seguirme en mis redes sociales:</p>
+    <p><a href="mailto:mariaflorencia@email.com">mariaflorencia@email.com</a></p>
+    <p><a href="https://www.instagram.com/fray_art?igsh=MXNnbnBxamwxZjhrcQ" target="_blank">@fray_art en Instagram</a></p>
+  </section>  <!-- PIE DE PÁGINA -->  <footer>
+    <p>&copy; 2025 Maria Florencia Juárez. Todos los derechos reservados.</p>
+  </footer></body>
+</html>
