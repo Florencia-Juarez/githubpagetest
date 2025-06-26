@@ -1,10 +1,10 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio | Maria Florencia Juárez</title>
   <style>
-    /* =================== VARIABLES DE COLOR Y FUENTE =================== */
     :root {
       --color-principal: #ff99aa;
       --color-acento: #ffe6ec;
@@ -12,7 +12,8 @@
       --color-texto: #2a2a2a;
       --color-tarjeta: #fff0f5;
       --fuente: 'Segoe UI', sans-serif;
-    }/* =================== REGLAS GENERALES =================== */
+    }
+
 * {
   margin: 0;
   padding: 0;
@@ -131,11 +132,20 @@ footer {
   padding: 20px;
   font-size: 0.9em;
   color: #666;
+  position: relative;
+}
+
+footer img {
+  width: 100px;
+  margin-top: 10px;
 }
 
   </style>
 </head>
-<body>  <!-- ENCABEZADO CON MENÚ -->  <header>
+<body>
+
+
+<header>
     <h1>Maria Florencia Juárez</h1>
     <nav>
       <a href="#inicio">Inicio</a>
@@ -143,15 +153,25 @@ footer {
       <a href="#proyectos">Proyectos</a>
       <a href="#contacto">Contacto</a>
     </nav>
-  </header>  <!-- SECCIÓN PRINCIPAL (HERO) -->  <section class="hero" id="inicio">
+</header>
+
+
+<section class="hero" id="inicio">
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyNDh2ZG81a2NjcTlvejgyNnpiMXM0endkcTJ3aGh0eWhpZm1kMTJxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ijmf8msvVwaCR9c6DV/giphy.gif" alt="Decoración flores" style="width: 150px; margin-bottom: 20px;">
     <h1>Hola, soy Florencia</h1>
     <p>Estudiante de Producción y Desarrollo de Videojuegos</p>
     <button class="button" onclick="document.getElementById('contacto').scrollIntoView()">Contactame</button>
-  </section>  <!-- SOBRE MÍ -->  <section id="sobremi">
+</section>
+
+
+<section id="sobremi">
     <h2>Sobre mí</h2>
     <p>Nací el 13 de agosto de 2004 y vivo en Open Door, partido de Luján. Actualmente estudio Producción y Desarrollo de Videojuegos en la Universidad Nacional de José C. Paz, carrera que elegí gracias a mi amor por los videojuegos, inspirado desde chica por mi papá y Sonic.</p>
     <p>Me gusta dibujar y aportar ideas creativas. Estoy mejorando día a día en programación, aunque todavía me cuesta un poco.</p>
-  </section>  <!-- PROYECTOS -->  <section id="proyectos">
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos">
     <h2>Proyectos</h2>
     <div class="grid">
       <div class="card">
@@ -167,12 +187,20 @@ footer {
         <p>Proyecto jugable con estilo retro y temática simpática.</p>
       </div>
     </div>
-  </section>  <!-- CONTACTO -->  <section id="contacto">
+</section>
+
+
+<section id="contacto">
     <h2>Contacto</h2>
     <p>Podés escribirme o seguirme en mis redes sociales:</p>
-    <p><a 
     <p><a href="https://www.instagram.com/fray_art?igsh=MXNnbnBxamwxZjhrcQ" target="_blank">@fray_art en Instagram</a></p>
-  </section>  <!-- PIE DE PÁGINA -->  <footer>
+</section>
+
+
+<footer>
     <p>&copy; 2025 Maria Florencia Juárez. Todos los derechos reservados.</p>
-  </footer></body>
+    <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUya3lwcHVkeWU2cDZsYW13djYydHozM3MweWY5bHJqNm9wYzRhYmI4YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CdFsHZlGJxdBHGCO3O/giphy.gif" alt="Gif saludo">
+</footer>
+
+</body>
 </html>
